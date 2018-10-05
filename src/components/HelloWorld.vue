@@ -10,7 +10,6 @@
               <em>&mdash;John Johnson</em>
             </small>
           </footer>
-          <p>Server Status: {{ status }}</p>
         </blockquote>
       </v-layout>
     </v-slide-y-transition>

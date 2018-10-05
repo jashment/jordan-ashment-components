@@ -46,7 +46,11 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <HelloWorld/>
+      <ja-header></ja-header>
+      <ja-helloWorld/>
+      <ja-customComp/>
+      <ja-serverStatus></ja-serverStatus>
+      <ja-footer></ja-footer>
     </v-content>
     <v-navigation-drawer
       temporary
@@ -71,12 +75,20 @@
 </template>
 
 <script>
+import Header from './components/Header.vue'
 import HelloWorld from './components/HelloWorld'
+import CustomComp from './components/CustomComp.vue'
+import ServerStatus from './components/ServerStatus.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'ja-header': Header,
+    'ja-helloWorld': HelloWorld,
+    'ja-customComp': CustomComp,
+    'ja-serverStatus': ServerStatus,
+    'ja-footer': Footer
   },
   data () {
     return {
