@@ -38,10 +38,6 @@ export default {
         padding: .5em;
     }
 
-    div:hover {
-        background-color: gainsboro;
-    }
-
     button {
         border: solid 1px black;
         border-radius: 10px;
