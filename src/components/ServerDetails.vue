@@ -1,0 +1,16 @@
+<template>
+  <p>Server Details are currently not updated</p>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+
+<style scoped>
+    p {
+      padding-bottom: 5em;
+    }
+</style>

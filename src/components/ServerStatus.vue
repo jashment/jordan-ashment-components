@@ -1,25 +1,30 @@
 <template>
-
-
-    <div class="col-xs-12 col-sm-6">
-        <ul class="list-group">
-            <a @click="changeStatus">
-                <li class="list-group-item" v-for="i in 5">Server #{{ i, }}</li><span>{{status}}</span>
-            </a>
-        </ul>
+<div>
+    <div>
+        <div id="serverDiv">
+            <h4>Server Status: {{ status }}</h4>
+        </div>
+        <br>
+        <button @click="changeStatus">Change Status</button>
     </div>
+</div>
 </template>
 
 <script>
 export default {
-    data: function (){
+    data (){
         return {
             status: 'Normal'
         }
     },
     methods: {
         changeStatus() {
-            this.status = 'Critical'
+            alert('You are changing status of this server from: ' + this.status)
+            if (this.status === 'Normal') {
+                this.status = 'Critical'
+            } else {
+                this.status = 'Normal'
+            }
         }
     }
 }
@@ -27,6 +32,25 @@ export default {
 
 <style scoped>
     div {
-        border: 1px solid blue;
+        float: left;
+        margin: 1em;
+        text-align: center;
+        padding: .5em;
+    }
+
+    div:hover {
+        background-color: gainsboro;
+    }
+
+    button {
+        border: solid 1px black;
+        border-radius: 10px;
+        margin: auto;
+        padding: 1em;
+    }
+    button:hover {
+        background-color: gray;
+        color: white;
     }
 </style>
+

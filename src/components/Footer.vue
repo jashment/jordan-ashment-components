@@ -1,9 +1,15 @@
 <template>
-        <div class="row">
-            <div class="col-xs-12">
                 <footer>
-                    <p>All Servers are managed here</p>
+                    <h3>All Servers are managed here</h3>
                 </footer>
-            </div>
-        </div>
 </template>
+
+<style>
+    footer {
+        bottom: 0;
+        padding: 1em;
+        position: fixed;
+        background-color: gainsboro;
+        width: 100%;
+    }
+</style>
